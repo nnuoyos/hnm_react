@@ -7,7 +7,7 @@ const ProductDetail = () => {
   let {id} = useParams();
   const [product, setProduct] = useState(null);
   const getProductDetail = async() => {
-    let url = (`https://my-json-server.typicode.com/nnuoyos/hnm_react/${id}`)
+    let url = (`https://my-json-server.typicode.com/nnuoyos/hnm_react/products/${id}`)
     /* let url = (`http://localhost:3004/products/${id}`) */
     let response = await fetch(url) //url을 fetch 해준다
     let data = await response.json()
